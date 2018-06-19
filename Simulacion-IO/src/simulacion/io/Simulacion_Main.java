@@ -9,7 +9,7 @@ package simulacion.io;
  *
  * @author Jonathan
  */
-public class SimulacionIO {
+public class Simulacion_Main {
 
     /**
      * @param args the command line arguments
