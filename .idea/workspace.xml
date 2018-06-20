@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af07b009-8f57-468f-91c3-fe98942a8acb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientAdmModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientAdmModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExecuteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExecuteModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProcessModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProcessModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomValueGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransactionsDataModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransactionsDataModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/manifest.mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/nbproject/build-impl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/nbproject/genfiles.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/nbproject/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Calendario.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Est.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Play_G.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Stratova.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/Icons/Tuerca_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Interfaz.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Interfaz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Simulacion_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientAdmModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ClientAdmModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExecuteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ExecuteModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProcessModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ProcessModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/QueryModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomValueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/RandomValueGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TransactionsDataModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/TransactionsDataModule.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,67 +42,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientAdmModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClientAdmModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="71" />
-              <folding>
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProcessModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-              <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#126#127#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionsDataModule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TransactionsDataModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-              <folding>
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomValueGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RandomValueGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#634#635#0" expanded="true" />
                 <element signature="e#674#675#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientAdmModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ClientAdmModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-359" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ProcessModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-89" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomValueGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/RandomValueGenerator.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -125,7 +115,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="38" />
     <option name="width" value="1049" />
     <option name="height" value="767" />
@@ -142,6 +132,32 @@
             <path>
               <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimulationIO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimulationIO" type="462c0819:PsiDirectoryNode" />
+              <item name="Simulacion-IO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimulationIO" type="462c0819:PsiDirectoryNode" />
+              <item name="Simulacion-IO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimulationIO" type="462c0819:PsiDirectoryNode" />
+              <item name="Simulacion-IO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="simulacion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimulationIO" type="462c0819:PsiDirectoryNode" />
+              <item name="Simulacion-IO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="simulacion" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimulationIO" type="b2602c69:ProjectViewProjectNode" />
@@ -226,7 +242,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529341195597</updated>
       <workItem from="1529341200479" duration="5309000" />
-      <workItem from="1529456788114" duration="11981000" />
+      <workItem from="1529456788114" duration="12224000" />
     </task>
     <task id="LOCAL-00001" summary="cambios con clase Client">
       <created>1529462236436</created>
@@ -239,10 +255,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17290000" />
+    <option name="totallyTimeSpent" value="17533000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="38" width="1049" height="767" extended-state="0" />
+    <frame x="0" y="38" width="1049" height="767" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -330,30 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClientAdmModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="71" />
-          <folding>
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExecuteModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -391,7 +383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TransactionsDataModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
+        <state relative-caret-position="831">
           <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
           <folding>
             <element signature="e#940#941#0" expanded="true" />
@@ -399,6 +391,43 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientAdmModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="56" column="15" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="71" />
+          <folding>
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ClientAdmModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/ProcessModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simulacion-IO/src/simulacion/io/RandomValueGenerator.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
