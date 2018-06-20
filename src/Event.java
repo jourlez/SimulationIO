@@ -4,8 +4,8 @@ import java.util.List;
  *
  */
 public class Event {
-	enum cliente{};
-	List<cliente> eventos;
+	Client cliente;
+	List<Client> eventos;
 	
 	public Event() {
 		

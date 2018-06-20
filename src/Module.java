@@ -6,7 +6,7 @@ import java.util.List;
 public class Module {
 	int n;
 	List<Enum> colaSimulaciones;
-	float t;
+	double t;
 	
 	public Module(){
 		
@@ -30,5 +30,13 @@ public class Module {
 	
 	public void cerrarConexion() {
 		
+	}
+
+	public void setTiempos(){
+
+	}
+
+	public int getN() {
+		return n;
 	}
 }
