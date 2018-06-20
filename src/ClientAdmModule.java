@@ -1,12 +1,18 @@
 
 public class ClientAdmModule extends Module {
 
-	public ClientAdmModule() {
-		
+	int tipoConsulta;
+	float tiempoHilo;
+	float tiempoTransmision;
+
+
+	public ClientAdmModule(Client Cliente) {
+
 	}
 	
-	public void nuevoCliente() {
-		
+	public Client nuevoCliente() {
+		Client cliente = new Client();
+		return cliente;
 	}
 	
 	public void rechazarConexion() {
