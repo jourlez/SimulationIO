@@ -27,6 +27,34 @@ public class Client {
         return tiempoTransmision;
     }
 
+    public double getLexica() {
+        return lexica;
+    }
+
+    public double getSemantica() {
+        return semantica;
+    }
+
+    public double getSintactica() {
+        return sintactica;
+    }
+
+    public double getPermisos() {
+        return permisos;
+    }
+
+    public double getOptimizacion() {
+        return optimizacion;
+    }
+
+    public int getNumeroDatos() {
+        return numeroDatos;
+    }
+
+    public int getTiempoEjecucion() {
+        return tiempoEjecucion;
+    }
+
     public void setIdentificador(String nombre){
         this.identificador = nombre;
     }
