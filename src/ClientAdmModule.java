@@ -5,7 +5,7 @@ public class ClientAdmModule extends Module {
 	double tiempoHilo;
 	double tiempoTransmision;
 	//se definen cuantas conexiones simultaneas se pueden hacer
-    int n = 10;
+    int n = 5;
     int conexiones = 0;
     Client cliente;
     int numeroCliente = 0;
@@ -20,22 +20,20 @@ public class ClientAdmModule extends Module {
 
     /**
      * Metodo responsable de crear un nuevo cliente, y llenar sus datos primarios
-     * @return
+     * @return cliente, que sirve de parametro para el iniciar
      */
-	public Client nuevoCliente() {
+	public Client nuevoCliente(int NumCliente) {
 		cliente = new Client();
-		this.rechazarConexion();
+		cliente.setIdentificador("cliente" + NumCliente);
 		conexiones++;
-		cliente.setIdentificador("cliente" + numeroCliente);
-        cliente.setTipoConsulta(generator.tipoConsulta());
-        if (cliente.getTipoConsulta() == 1 || cliente.getTipoConsulta() == 3){
-            cliente.setReadOnly(true);
-        } else{
-            cliente.setReadOnly(false);
-        }
 		return cliente;
 	}
-	
+
+	@Override
+	public int getN() {
+		return n;
+	}
+
 	public void rechazarConexion() {
 		if (conexiones > n){
 		    System.out.println("Conexion rechazada");
@@ -53,12 +51,10 @@ public class ClientAdmModule extends Module {
 
     /**
      * Metodo para iniciar la simulacion del modulo de administracion de clientes
-     * @param
      * @return cliente, que sirve de parametro para el siguiente modulo
      */
-    public Client iniciar(){
-	    cliente = nuevoCliente();
-	    this.rechazarConexion();
+    public Client iniciar(int NumCliente){
+	    cliente = nuevoCliente(NumCliente);
 	    this.setTiempos();
 	    return cliente;
     }

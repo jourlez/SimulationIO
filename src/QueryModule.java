@@ -2,6 +2,7 @@
 public class QueryModule extends Module {
 
 	Client cliente;
+	RandomValueGenerator generator = new RandomValueGenerator();
 
 	public QueryModule() {
 
@@ -40,12 +41,18 @@ public class QueryModule extends Module {
 	}
 
 	public void setTiempos(){
-
+		cliente.setTipoConsulta(generator.tipoConsulta());
+		if (cliente.getTipoConsulta() == 1 || cliente.getTipoConsulta() == 3){
+			cliente.setReadOnly(true);
+		} else{
+			cliente.setReadOnly(false);
+		}
 	}
 
-	public void iniciar(Client Cliente){
+	public Client iniciar(Client Cliente){
 		cliente = Cliente;
 		this.setTiempos();
+		return cliente;
 	}
 	
 }
