@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.ArrayList;
@@ -19,6 +21,7 @@ public class Simulator {
     boolean terminado;
     int numeroCliente;
     boolean lleno;
+    FileWriter estadisticas;
 	
 	public Simulator() {
         servidores = new ArrayList<Servidor>();
@@ -31,6 +34,7 @@ public class Simulator {
         terminado = false;
         numeroCliente = 1;
         lleno = false;
+        estadisticas = null;
 	}
 	
 	public void iniciarSimulacion() {
@@ -38,6 +42,11 @@ public class Simulator {
         int conexiones = moduloAdm.getN();
         for (int i = 0; i < conexiones; i++){
             servidores.add(new Servidor());
+        }
+        try {
+            estadisticas = new FileWriter("estadisticas.txt");
+        } catch (IOException e){
+            e.printStackTrace();
         }
         servidores.trimToSize();
         while(!terminado){
@@ -47,7 +56,7 @@ public class Simulator {
                     if (!servidores.get(i).isOcupado()){
                         servidores.get(i).iniciar(numeroCliente);
                         numeroCliente++;
-                        servidores.get(i).Estadisticas();
+                        servidores.get(i).Estadisticas(estadisticas);
                         servidores.get(i).setOcupado();
                     }
                     if (i == servidores.size()-1){
@@ -62,12 +71,25 @@ public class Simulator {
             }
 
         }
+        try {
+            estadisticas.close();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
         System.out.println("Fin de la simulacion");
 	}
 	
 	public void configurarVariables() {
-		
+
+    }
+
+	public void desocuparServidores() {
+	    for (int i = 0; i < servidores.size(); i++){
+                servidores.get(i).setDesocupado();
+            }
 	}
+
 	
 	public void actualizarVariables() {
 		

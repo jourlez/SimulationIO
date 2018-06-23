@@ -49,6 +49,7 @@ public class TransactionsDataModule extends Module {
 
 	public void setTiempos(){
 		cliente.setNumeroDatos(bloques); //cada bloque dura 0.1 segundos para ejecutarse
+		cliente.setTiempoCarga(bloques/10);
 	}
 
 	public void iniciar(Client Cliente){

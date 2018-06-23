@@ -1,0 +1,60 @@
+El identificador del cliente es: cliente1
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.8068378567695618
+El tiempo de análisis semántico del cliente fue de: 0.33010053634643555
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 144
+ 
+El identificador del cliente es: cliente2
+El cliente es de tipo: JOIN
+El cliente es read-only?: true
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.8637980818748474
+El tiempo de análisis semántico del cliente fue de: 0.48047393560409546
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 16
+El tiempo de carga de los bloques del cliente son de: 1.0
+El tiempo de ejecución del cliente fue de: 144
+ 
+El identificador del cliente es: cliente3
+El cliente es de tipo: SELECT
+El cliente es read-only?: true
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.05955302715301514
+El tiempo de análisis semántico del cliente fue de: 1.0176112651824951
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 144
+ 
+El identificador del cliente es: cliente4
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.8722518682479858
+El tiempo de análisis semántico del cliente fue de: 1.2775877714157104
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 144
+ 
+El identificador del cliente es: cliente5
+El cliente es de tipo: JOIN
+El cliente es read-only?: true
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.8301031589508057
+El tiempo de análisis semántico del cliente fue de: 1.1240700483322144
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 18
+El tiempo de carga de los bloques del cliente son de: 1.0
+El tiempo de ejecución del cliente fue de: 144
+ 

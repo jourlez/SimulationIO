@@ -12,6 +12,7 @@ public class Client {
     private int concurrencia;
     private int numeroDatos;
     private int tiempoEjecucion;
+    private double tiempoCarga;
 
 
     public Client(){
@@ -53,6 +54,10 @@ public class Client {
 
     public int getTiempoEjecucion() {
         return tiempoEjecucion;
+    }
+
+    public double getTiempoCarga() {
+        return tiempoCarga;
     }
 
     public void setIdentificador(String nombre){
@@ -98,5 +103,9 @@ public class Client {
     public void setAdministracion(double TH, int TT){
         tiempoHilo = TH;
         tiempoTransmision = TT;
+    }
+
+    public void setTiempoCarga(double tiempoCarga) {
+        this.tiempoCarga = tiempoCarga;
     }
 }
