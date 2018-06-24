@@ -1,80 +1,228 @@
+Simulacion 0
+ 
 El identificador del cliente es: cliente1
-El cliente es de tipo: JOIN
-El cliente es read-only?: true
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
 El tiempo de creacion del hilo es de: 1
 El tiempo de análisis léxico del cliente fue de: 0.1
-El tiempo de análisis sintáctico del cliente fue de: 0.11106628179550171
-El tiempo de análisis semántico del cliente fue de: 0.8278108835220337
+El tiempo de análisis sintáctico del cliente fue de: 0.26284968852996826
+El tiempo de análisis semántico del cliente fue de: 1.158367395401001
 El tiempo de análisis de permisos del cliente fue de: 0.7
-El tiempo de análisis de optimización del cliente fue de: 0.1
-Los números de datos del cliente fueron de: 6
-El tiempo de carga de los bloques del cliente son de: 0.6
-El tiempo de ejecución del cliente fue de: 36.0
-Tiempo Total: 39.438877165317535
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 4.471217083930969
 Tiempo Entrada; 0
-Tiempo Salida: 40
+Tiempo Salida: 5
  
 El identificador del cliente es: cliente2
 El cliente es de tipo: SELECT
 El cliente es read-only?: true
 El tiempo de creacion del hilo es de: 1
 El tiempo de análisis léxico del cliente fue de: 0.1
-El tiempo de análisis sintáctico del cliente fue de: 0.6954615712165833
-El tiempo de análisis semántico del cliente fue de: 0.5766526460647583
+El tiempo de análisis sintáctico del cliente fue de: 0.5194097757339478
+El tiempo de análisis semántico del cliente fue de: 0.26492953300476074
 El tiempo de análisis de permisos del cliente fue de: 0.7
 El tiempo de análisis de optimización del cliente fue de: 0.1
 Los números de datos del cliente fueron de: 1
 El tiempo de carga de los bloques del cliente son de: 0.1
 El tiempo de ejecución del cliente fue de: 1.0
-Tiempo Total: 4.2721142172813416
+Tiempo Total: 3.7843393087387085
 Tiempo Entrada; 1
-Tiempo Salida: 6
+Tiempo Salida: 5
  
 El identificador del cliente es: cliente3
 El cliente es de tipo: SELECT
 El cliente es read-only?: true
 El tiempo de creacion del hilo es de: 1
 El tiempo de análisis léxico del cliente fue de: 0.1
-El tiempo de análisis sintáctico del cliente fue de: 0.1323145627975464
-El tiempo de análisis semántico del cliente fue de: 1.4238507747650146
+El tiempo de análisis sintáctico del cliente fue de: 0.08316785097122192
+El tiempo de análisis semántico del cliente fue de: 0.05028510093688965
 El tiempo de análisis de permisos del cliente fue de: 0.7
 El tiempo de análisis de optimización del cliente fue de: 0.1
 Los números de datos del cliente fueron de: 1
 El tiempo de carga de los bloques del cliente son de: 0.1
 El tiempo de ejecución del cliente fue de: 1.0
-Tiempo Total: 4.556165337562561
+Tiempo Total: 3.1334529519081116
 Tiempo Entrada; 2
-Tiempo Salida: 7
+Tiempo Salida: 6
  
 El identificador del cliente es: cliente4
 El cliente es de tipo: DDL
 El cliente es read-only?: false
 El tiempo de creacion del hilo es de: 1
 El tiempo de análisis léxico del cliente fue de: 0.1
-El tiempo de análisis sintáctico del cliente fue de: 0.06136643886566162
-El tiempo de análisis semántico del cliente fue de: 1.3651626110076904
+El tiempo de análisis sintáctico del cliente fue de: 0.9487950205802917
+El tiempo de análisis semántico del cliente fue de: 0.527661144733429
 El tiempo de análisis de permisos del cliente fue de: 0.7
 El tiempo de análisis de optimización del cliente fue de: 0.25
 Los números de datos del cliente fueron de: 0
 El tiempo de carga de los bloques del cliente son de: 0.0
 El tiempo de ejecución del cliente fue de: 0.5
-Tiempo Total: 3.976529049873352
+Tiempo Total: 4.0264561653137205
 Tiempo Entrada; 3
-Tiempo Salida: 7
+Tiempo Salida: 8
  
 El identificador del cliente es: cliente5
-El cliente es de tipo: DDL
+El cliente es de tipo: UPDATE
 El cliente es read-only?: false
 El tiempo de creacion del hilo es de: 1
 El tiempo de análisis léxico del cliente fue de: 0.1
-El tiempo de análisis sintáctico del cliente fue de: 0.19667768478393555
-El tiempo de análisis semántico del cliente fue de: 1.5287256240844727
+El tiempo de análisis sintáctico del cliente fue de: 0.7604526877403259
+El tiempo de análisis semántico del cliente fue de: 1.4779548645019531
 El tiempo de análisis de permisos del cliente fue de: 0.7
 El tiempo de análisis de optimización del cliente fue de: 0.25
 Los números de datos del cliente fueron de: 0
 El tiempo de carga de los bloques del cliente son de: 0.0
-El tiempo de ejecución del cliente fue de: 0.5
-Tiempo Total: 4.275403308868408
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 5.288407552242279
 Tiempo Entrada; 4
+Tiempo Salida: 10
+ 
+El identificador del cliente es: cliente6
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.2903308868408203
+El tiempo de análisis semántico del cliente fue de: 0.6681779026985168
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 4.008508789539337
+Tiempo Entrada; 5
+Tiempo Salida: 10
+ 
+El identificador del cliente es: cliente7
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.15759438276290894
+El tiempo de análisis semántico del cliente fue de: 0.38734543323516846
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 1
+El tiempo de carga de los bloques del cliente son de: 0.1
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 3.6949398159980773
+Tiempo Entrada; 6
+Tiempo Salida: 10
+ 
+Simulacion 1
+ 
+El identificador del cliente es: cliente1
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.2508774399757385
+El tiempo de análisis semántico del cliente fue de: 0.18341773748397827
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 3.4842951774597166
+Tiempo Entrada; 0
+Tiempo Salida: 4
+ 
+El identificador del cliente es: cliente2
+El cliente es de tipo: SELECT
+El cliente es read-only?: true
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.9588157534599304
+El tiempo de análisis semántico del cliente fue de: 0.3801446557044983
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 1
+El tiempo de carga de los bloques del cliente son de: 0.1
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 4.338960409164429
+Tiempo Entrada; 1
+Tiempo Salida: 6
+ 
+El identificador del cliente es: cliente3
+El cliente es de tipo: JOIN
+El cliente es read-only?: true
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.7282030582427979
+El tiempo de análisis semántico del cliente fue de: 0.7144955396652222
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 57
+El tiempo de carga de los bloques del cliente son de: 5.7
+El tiempo de ejecución del cliente fue de: 3249.0
+Tiempo Total: 3258.042698597908
+Tiempo Entrada; 2
+Tiempo Salida: 3261
+ 
+El identificador del cliente es: cliente4
+El cliente es de tipo: SELECT
+El cliente es read-only?: true
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.15726113319396973
+El tiempo de análisis semántico del cliente fue de: 1.3190391063690186
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 1
+El tiempo de carga de los bloques del cliente son de: 0.1
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 4.476300239562988
+Tiempo Entrada; 3
+Tiempo Salida: 8
+ 
+El identificador del cliente es: cliente5
+El cliente es de tipo: SELECT
+El cliente es read-only?: true
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.3317447900772095
+El tiempo de análisis semántico del cliente fue de: 1.971075177192688
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 1
+El tiempo de carga de los bloques del cliente son de: 0.1
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 5.3028199672698975
+Tiempo Entrada; 4
+Tiempo Salida: 10
+ 
+El identificador del cliente es: cliente6
+El cliente es de tipo: UPDATE
+El cliente es read-only?: false
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.3622201085090637
+El tiempo de análisis semántico del cliente fue de: 0.009078025817871094
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.25
+Los números de datos del cliente fueron de: 0
+El tiempo de carga de los bloques del cliente son de: 0.0
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 3.4212981343269346
+Tiempo Entrada; 5
 Tiempo Salida: 9
+ 
+El identificador del cliente es: cliente7
+El cliente es de tipo: SELECT
+El cliente es read-only?: true
+El tiempo de creacion del hilo es de: 1
+El tiempo de análisis léxico del cliente fue de: 0.1
+El tiempo de análisis sintáctico del cliente fue de: 0.7569636702537537
+El tiempo de análisis semántico del cliente fue de: 1.9371860027313232
+El tiempo de análisis de permisos del cliente fue de: 0.7
+El tiempo de análisis de optimización del cliente fue de: 0.1
+Los números de datos del cliente fueron de: 1
+El tiempo de carga de los bloques del cliente son de: 0.1
+El tiempo de ejecución del cliente fue de: 1.0
+Tiempo Total: 5.694149672985077
+Tiempo Entrada; 6
+Tiempo Salida: 12
  

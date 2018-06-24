@@ -21,7 +21,7 @@ public class Simulator {
     boolean terminado;
     int numeroCliente;
     boolean lleno;
-    FileWriter estadisticas;
+
     double tiempoLimite;
     RandomValueGenerator generator;
     private ArrayList<Integer> tablaLlegadas;
@@ -38,7 +38,6 @@ public class Simulator {
         terminado = false;
         numeroCliente = 1;
         lleno = false;
-        estadisticas = null;
         tiempoLimite = 0;
         generator = new RandomValueGenerator();
         ListaEventos = new ArrayList<Event>();
@@ -50,7 +49,7 @@ public class Simulator {
         tablaSalidas.add(-1);
 	}
 	
-	public void iniciarSimulacion() {
+	public void iniciarSimulacion(FileWriter estadisticas) {
         //se inicializa el vector de servidores con el numero k de conexiones del modulo de administracion de clientes
         int conexiones = moduloAdm.getN();
         int i = 0;
@@ -61,11 +60,7 @@ public class Simulator {
         for (int j = 0; j < conexiones; j++){
             servidores.add(new Servidor());
         }
-        try {
-            estadisticas = new FileWriter("estadisticas.txt");
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+
         this.setTiempoLimite(100);
         //se produce la primera llegada, con el reloj en 0
         tablaLlegadas.add(0);
@@ -137,11 +132,7 @@ public class Simulator {
             tiempo++;
             i = 0;
         }
-        try {
-            estadisticas.close();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+
 
         System.out.println("Fin de la simulacion");
 	}
