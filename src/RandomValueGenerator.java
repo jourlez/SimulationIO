@@ -41,4 +41,25 @@ public class RandomValueGenerator {
         int bloques = random.nextInt(64) + 1;
         return bloques;
     }
+
+    /*
+     * Metodo encargado de procesar un numero aleatorio para convertirlo en el tiempo entre llamadas, o sea, el tiempo cuando va a llamar el siguiente cliente
+     * Tabla Llegadas
+     * 1 segundos --> 0.20
+     * 2 segundos --> 0.60
+     * 3 segundos --> 0.20
+     */
+    public int Llegada() {
+        /**int llegada;
+        float aleatorio = random.nextFloat();
+        if (aleatorio <= 0.19) {
+            llegada = 1;
+        } else if (aleatorio <= 0.79) {
+            llegada = 2;
+        } else {
+            llegada = 3;
+        }
+        return llegada;**/
+        return 1;
+    }
 }

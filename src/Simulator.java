@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Simulator {
 	double reloj;
-	Queue<Event> ListaEventos;
+	ArrayList<Event> ListaEventos;
 	Client cliente;
     private ArrayList<Servidor> servidores;
     private Queue<Integer> ColaClientes;
@@ -22,6 +22,10 @@ public class Simulator {
     int numeroCliente;
     boolean lleno;
     FileWriter estadisticas;
+    double tiempoLimite;
+    RandomValueGenerator generator;
+    private ArrayList<Integer> tablaLlegadas;
+    private ArrayList<Integer> tablaSalidas;
 	
 	public Simulator() {
         servidores = new ArrayList<Servidor>();
@@ -35,12 +39,26 @@ public class Simulator {
         numeroCliente = 1;
         lleno = false;
         estadisticas = null;
+        tiempoLimite = 0;
+        generator = new RandomValueGenerator();
+        ListaEventos = new ArrayList<Event>();
+        tablaLlegadas = new ArrayList<Integer>();
+        //agrega un elemento para que coincidan los indices
+        tablaLlegadas.add(-1);
+        tablaSalidas = new ArrayList<Integer>();
+        //agrega un elemento para que coincidan los indices
+        tablaSalidas.add(-1);
 	}
 	
 	public void iniciarSimulacion() {
         //se inicializa el vector de servidores con el numero k de conexiones del modulo de administracion de clientes
         int conexiones = moduloAdm.getN();
-        for (int i = 0; i < conexiones; i++){
+        int i = 0;
+        int u = 0;
+        int llegada = 0;
+        int salida = 0;
+        int tiempo = 0;
+        for (int j = 0; j < conexiones; j++){
             servidores.add(new Servidor());
         }
         try {
@@ -48,28 +66,76 @@ public class Simulator {
         } catch (IOException e){
             e.printStackTrace();
         }
-        servidores.trimToSize();
+        this.setTiempoLimite(100);
+        //se produce la primera llegada, con el reloj en 0
+        tablaLlegadas.add(0);
         while(!terminado){
-            //entra un cliente al sistema, asi que se pregunta cual es el primer servidor que puede recibir la consulta
-            for(int i = 0; i < servidores.size(); i++){
-                if(!lleno){
-                    if (!servidores.get(i).isOcupado()){
-                        servidores.get(i).iniciar(numeroCliente);
-                        numeroCliente++;
-                        servidores.get(i).Estadisticas(estadisticas);
-                        servidores.get(i).setOcupado();
+            //pregunta si el reloj ya llego al tiempo limite
+            if (tiempo >= tiempoLimite){
+                terminado = true;
+            }
+            //pregunta si deberia de haber una salida
+            if (tablaSalidas.contains(tiempo)){
+                //saca el elemento que va a salir
+                for (int t = 0; t < servidores.size(); t++){
+                    if (servidores.get(t).cliente.getNumero() == tablaSalidas.indexOf(tiempo)){
+                        servidores.get(t).setDesocupado();
+                        System.out.println("");
+                        System.out.println("Se ha producido la salida del " + servidores.get(t).cliente.getIdentificador());
+                        System.out.println("");
+                        lleno = false;
                     }
-                    if (i == servidores.size()-1){
-                        lleno = true;
-                    }
-                }
-                else{
-                    //si el sistema esta lleno se agrega el nuevo identificador de cliente a cola
-                    ColaClientes.add(numeroCliente);
-                    terminado = true;
                 }
             }
-
+            //pregunta si deberia de haber una llegada
+            if (tablaLlegadas.contains(tiempo)){
+                //entra un cliente al sistema, asi que se pregunta cual es el primer servidor que puede recibir la consulta
+                while(i < servidores.size() && tiempo <= tiempoLimite) {
+                    if(!lleno){
+                        if (!servidores.get(i).isOcupado()){
+                            //mete un cliente nuevo al sistema
+                            System.out.println("Se produjo una llegada en el tiempo: " + tiempo);
+                            servidores.get(i).iniciar(numeroCliente);
+                            salida = (int)Math.ceil(servidores.get(i).getTiempos());
+                            //crea un evento en la tabla de eventos
+                            ListaEventos.add(new Event(numeroCliente, tiempo, salida + tiempo));
+                            numeroCliente++;
+                            //se agrega la salida a la tabla
+                            int salidaTotal = salida + tiempo;
+                            tablaSalidas.add(salidaTotal);
+                            reloj += servidores.get(i).getTiempos() + tiempo;
+                            servidores.get(i).Estadisticas(estadisticas);
+                            System.out.println("Reloj: " + reloj);
+                            try {
+                                estadisticas.write("Tiempo Entrada; " + tiempo + "\n");
+                                estadisticas.write("Tiempo Salida: " + salidaTotal + "\n");
+                                estadisticas.write(" "  + "\n");
+                            } catch (IOException e){
+                                e.printStackTrace();
+                            }
+                            System.out.println();
+                            servidores.get(i).setOcupado();
+                            //despues de meter un cliente, produce una entrada nueva
+                            tablaLlegadas.add(generator.Llegada() + tiempo);
+                            //produce una bandera para salir del sistema apenas se meta el cliente al sistema
+                            i = servidores.size();
+                        }
+                        if (i == servidores.size()-1){
+                            lleno = true;
+                        }
+                    }
+                    else{
+                        //si el sistema esta lleno se ignora la conexion
+                        //se produce una llegada
+                        tablaLlegadas.add(generator.Llegada() + tiempo);
+                        // terminado = true;
+                    }
+                    i++;
+                }
+            }
+            //aumenta tiempo
+            tiempo++;
+            i = 0;
         }
         try {
             estadisticas.close();
@@ -106,4 +172,8 @@ public class Simulator {
 	public void siguienteEventp() {
 		
 	}
+
+    public void setTiempoLimite(double tiempoLimite) {
+        this.tiempoLimite = tiempoLimite;
+    }
 }

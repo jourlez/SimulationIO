@@ -30,7 +30,7 @@ public class TransactionsDataModule extends Module {
 	}
 	
 	public void calcularBloquesC() {
-		if(cliente.getTipoConsulta() == 4){ //si es un Select
+		if(cliente.getTipoConsulta() == 1){ //si es un Select
 			bloques = 1;
 		}
 		else if (cliente.getTipoConsulta() == 3) {
@@ -49,7 +49,7 @@ public class TransactionsDataModule extends Module {
 
 	public void setTiempos(){
 		cliente.setNumeroDatos(bloques); //cada bloque dura 0.1 segundos para ejecutarse
-		cliente.setTiempoCarga(bloques/10);
+		cliente.setTiempoCarga((double)bloques/10);
 	}
 
 	public void iniciar(Client Cliente){

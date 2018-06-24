@@ -37,8 +37,18 @@ public class ExecuteModule extends Module {
 
 	@Override
 	public void setTiempos() {
-		int tiempoTransmision = cliente.getTiempoTransmision();
-		cliente.setTiempoEjecucion(tiempoTransmision * tiempoTransmision);
+		int bloques = cliente.getNumeroDatos();
+		int tipo = cliente.getTipoConsulta();
+		if (tipo == 1 || tipo == 3){ //SELECT o JOIN
+			cliente.setTiempoEjecucion(bloques * bloques);
+		}
+		else if (tipo == 2){ //UPDATE
+			cliente.setTiempoEjecucion(1);
+		}
+		else{ //DDL
+			cliente.setTiempoEjecucion(0.5);
+		}
+
 	}
 
 	/**

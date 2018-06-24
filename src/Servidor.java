@@ -59,6 +59,7 @@ public class Servidor {
         }
         System.out.println("El cliente es de tipo: " + tipo);
         System.out.println("El cliente es read-only?: " + cliente.isReadOnly());
+        System.out.println("El tiempo de creacion del hilo es de: " + 1);
         System.out.println("El tiempo de analisis lexico del cliente fue de: " + cliente.getLexica());
         System.out.println("El tiempo de analisis sintactico del cliente fue de: " + cliente.getSintactica());
         System.out.println("El tiempo de analisis semantico del cliente fue de: " + cliente.getSemantica());
@@ -67,11 +68,11 @@ public class Servidor {
         System.out.println("Los numeros de datos del cliente fueron de: " + cliente.getNumeroDatos());
         System.out.println("El tiempo de carga de los bloques del cliente son de: " + cliente.getTiempoCarga());
         System.out.println("El tiempo de ejecucion del cliente fue de: " + cliente.getTiempoEjecucion());
-        System.out.println();
         try {
             archivo.write("El identificador del cliente es: " + cliente.getIdentificador() + "\n");
             archivo.write("El cliente es de tipo: " + tipo + "\n");
             archivo.write("El cliente es read-only?: " + cliente.isReadOnly() + "\n");
+            archivo.write("El tiempo de creacion del hilo es de: " + 1 + "\n");
             archivo.write("El tiempo de análisis léxico del cliente fue de: " + cliente.getLexica() + "\n");
             archivo.write("El tiempo de análisis sintáctico del cliente fue de: " + cliente.getSintactica() + "\n");
             archivo.write("El tiempo de análisis semántico del cliente fue de: " + cliente.getSemantica() + "\n");
@@ -80,13 +81,15 @@ public class Servidor {
             archivo.write("Los números de datos del cliente fueron de: " + cliente.getNumeroDatos() + "\n");
             archivo.write("El tiempo de carga de los bloques del cliente son de: " + cliente.getTiempoCarga() + "\n");
             archivo.write("El tiempo de ejecución del cliente fue de: " + cliente.getTiempoEjecucion() + "\n");
-            archivo.write(" "  + "\n");
+            archivo.write("Tiempo Total: " + this.getTiempos() + "\n");
+
         } catch (IOException e){
             e.printStackTrace();
         }
     }
 
-    public void getTiempos(){
-        tiempo = cliente.getLexica() + cliente.getSintactica() + cliente.getSemantica() + cliente.getPermisos() + cliente.getOptimizacion();
+    public double getTiempos(){
+        tiempo = cliente.getLexica() + cliente.getSintactica() + cliente.getSemantica() + cliente.getPermisos() + cliente.getOptimizacion()+ cliente.getTiempoCarga() + 1 + cliente.getTiempoEjecucion();
+        return tiempo;
     }
 }

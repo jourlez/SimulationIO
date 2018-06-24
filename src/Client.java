@@ -1,5 +1,6 @@
 public class Client {
     private String identificador;
+    private int numero;
     private double tiempoHilo;
     private int tiempoTransmision;
     private int tipoConsulta;
@@ -11,7 +12,7 @@ public class Client {
     private double optimizacion;
     private int concurrencia;
     private int numeroDatos;
-    private int tiempoEjecucion;
+    private double tiempoEjecucion;
     private double tiempoCarga;
 
 
@@ -52,12 +53,16 @@ public class Client {
         return numeroDatos;
     }
 
-    public int getTiempoEjecucion() {
+    public double getTiempoEjecucion() {
         return tiempoEjecucion;
     }
 
     public double getTiempoCarga() {
         return tiempoCarga;
+    }
+
+    public int getNumero() {
+        return numero;
     }
 
     public void setIdentificador(String nombre){
@@ -88,7 +93,7 @@ public class Client {
         this.numeroDatos = numeroDatos;
     }
 
-    public void setTiempoEjecucion(int tiempoEjecucion) {
+    public void setTiempoEjecucion(double tiempoEjecucion) {
         this.tiempoEjecucion = tiempoEjecucion;
     }
 
@@ -107,5 +112,9 @@ public class Client {
 
     public void setTiempoCarga(double tiempoCarga) {
         this.tiempoCarga = tiempoCarga;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 }
